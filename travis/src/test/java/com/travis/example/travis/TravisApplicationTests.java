@@ -29,4 +29,9 @@ class TravisApplicationTests {
 		moMvc.perform(get("/appName")).andExpect(status().isOk());
 	}
 
+	@Test
+	public void getAppName1() throws Exception{
+		moMvc.perform(get("/appName1")).andExpect(status().isOk());
+	}
+	
 }
